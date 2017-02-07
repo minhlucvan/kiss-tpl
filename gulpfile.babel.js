@@ -1,7 +1,8 @@
-const gulp = require('gulp');
-const eslint = require('gulp-eslint');
-const babel = require('gulp-babel');
-const mocha = require('gulp-mocha');
+var gulp = require('gulp');
+var eslint = require('gulp-eslint');
+var babel = require('gulp-babel');
+var mocha = require('gulp-mocha');
+var rename = require('gulp-rename');
 
 gulp.task('test', function(){ 
     gulp.src('./test/index.js')
