@@ -70,7 +70,7 @@ of course there is no `for`, but you can use `map`
 ```
 
 ### let put a function
-you can also put a functuon callback.
+you can also put a functuon callback like this.
 
 ```javascript
 
