@@ -4,10 +4,12 @@ const babel = require('gulp-babel');
 const mocha = require('gulp-mocha');
 
 gulp.task('test', function(){ 
-    gulp.src('./test/index.js', {read: false})
-        .pipe(mocha({reporter: 'nyan'}))
-    }
-);
+    gulp.src('./test/index.js')
+        .pipe(mocha())
+        .once('error', function( err ){
+            console.error(err);
+        });
+});
 
 gulp.task('lint', function(){
     return gulp.src(['**/*.js','!node_modules/**'])
