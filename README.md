@@ -28,7 +28,7 @@ or from github:
 # usage
 Just like template literals, no it's template literals.
 
-`javascript
+```javascript
     
     import kiss from 'kiss-tpl';
 
@@ -36,8 +36,8 @@ Just like template literals, no it's template literals.
     let tpl = ctx => kiss`hello ${ctx.world}`;
 
     console.log(tpl(context)); // hello world
-    
-` 
+
+``` 
 
 pretty easy right!
 
@@ -46,7 +46,7 @@ let me show you something cool
 ### conditional blocks
 there is no `if` - `else` here but you can do this instead.
 
-`javascript
+```javascript
 
     let context = {isFine: true }; 
     let tpl = ctx => kiss`
@@ -54,24 +54,25 @@ there is no `if` - `else` here but you can do this instead.
         B: hi, ${ctx.isFine ? "oh, I'm fine thank you." : "oh, I feel not verry good."}.
     `;
 
-` 
+``` 
 es6 is amazing.
 
 ### array render
 of course there is no `for`, but you can use `map`
 
-`javascript
+```javascript
 
     let context = {frieds: ["Bob", "julia", "Ren", "Samath"] }; 
     let tpl = ctx => kiss`
         I have many friends like ${ctx.frieds.map((friend) => fried + 'y';)}
     `;
 
-`
+```
+
 ### let put a function
 you can also put a functuon callback.
 
-`javascript
+```javascript
 
     function plus( one, other ){
         
@@ -82,7 +83,8 @@ you can also put a functuon callback.
         ${ctx.one} + ${ctx.other} = ${plus(ctx.one, ctx.other)} 
     `;
 
-`
+```
+
 thank for reading and happy coding.
 
 # license
