@@ -20,11 +20,11 @@ gulp.task('lint', function(){
 });
  
 gulp.task('build', function(){
-    return gulp.src('.src/index.js')
+    return gulp.src('./src/index.js')
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(rename("src/kiss-tml.js"))
+        .pipe(rename("kiss-tpl.js"))
         .pipe(gulp.dest('dist'));
 });
 

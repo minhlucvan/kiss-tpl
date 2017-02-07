@@ -6,7 +6,7 @@ verry simple template engine use ES6 - [Template literals](https://developer.moz
 # Features
 
 - :white_check_mark: nodejs support.
-- :white_check_mark: browsers lightweight.
+- :white_check_mark: browsers support.
 - :white_check_mark: well tested.
 - :white_check_mark: supper lightweight.
 - :white_check_mark: supper easy.
