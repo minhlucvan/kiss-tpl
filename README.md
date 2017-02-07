@@ -75,7 +75,7 @@ you can also put a functuon callback like this.
 ```javascript
 
     function plus( one, other ){
-        
+        return one + other;
     }
 
     let context = {one: 3, other: 1 }; 
