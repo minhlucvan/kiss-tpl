@@ -12,7 +12,6 @@ verry simple template engine use ES6 - [Template literals](https://developer.moz
 - :white_check_mark: supper easy.
 - :white_check_mark: powerful.
 - :white_check_mark: have every things that a template engine need.
-
 - :x: no dependentce required.
 - :x: no extra options.
 - :x: nothing to learn.
@@ -30,12 +29,14 @@ or from github:
 Just like template literals, no it's template literals.
 
 `javascript
+    
     import kiss from 'kiss-tpl';
 
     let context = {thing: "world" }; 
     let tpl = ctx => kiss`hello ${ctx.world}`;
 
     console.log(tpl(context)); // hello world
+    
 ` 
 
 pretty easy right!
@@ -46,11 +47,13 @@ let me show you something cool
 there is no `if` - `else` here but you can do this instead.
 
 `javascript
+
     let context = {isFine: true }; 
     let tpl = ctx => kiss`
         A: hello, how are you today?
         B: hi, ${ctx.isFine ? "oh, I'm fine thank you." : "oh, I feel not verry good."}.
     `;
+
 ` 
 es6 is amazing.
 
@@ -58,6 +61,7 @@ es6 is amazing.
 of course there is no `for`, but you can use `map`
 
 `javascript
+
     let context = {frieds: ["Bob", "julia", "Ren", "Samath"] }; 
     let tpl = ctx => kiss`
         I have many friends like ${ctx.frieds.map((friend) => fried + 'y';)}
@@ -68,6 +72,7 @@ of course there is no `for`, but you can use `map`
 you can also put a functuon callback.
 
 `javascript
+
     function plus( one, other ){
         
     }
