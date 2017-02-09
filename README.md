@@ -33,7 +33,7 @@ Just like template literals, no it's template literals.
     import kiss from 'kiss-tpl';
 
     let context = {thing: "world" }; 
-    let tpl = ctx => kiss`hello ${ctx.world}`;
+    let tpl = ctx => kiss`hello ${ctx.thing}`;
 
     console.log(tpl(context)); // hello world
 
@@ -69,8 +69,8 @@ of course there is no `for`, but you can use `map`
 
 ```
 
-### let put a function
-you can also put a functuon callback like this.
+### let put some function
+you can also put a function callback like this.
 
 ```javascript
 

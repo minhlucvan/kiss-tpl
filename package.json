@@ -1,6 +1,6 @@
 {
   "name": "kiss-tpl",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "lightweight, simple and powerful javascript template engine",
   "main": "dist/kiss-tpl.js",
   "scripts": {
